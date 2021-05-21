@@ -1,0 +1,1 @@
+This folder contains code to run CARNIVAL on synthetically generated small networks to examine two CARNIVAL  deals with various configurations of nodes, edges and values. Examples include branching, incoherent values, multiple solutions and netowrk motifs. 
