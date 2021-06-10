@@ -40,6 +40,8 @@ prepareForCarnivalRun <- function(dataPreprocessed, carnivalOptions,
   
   intDataRep <- createInternalDataRepresentation(dataPreprocessed, 
                                                  newDataRepresentation)
+  
+  print(intDataRep)
   parsedDataFilename <- carnivalOptions$filenames$parsedData
   
   if (newDataRepresentation) {

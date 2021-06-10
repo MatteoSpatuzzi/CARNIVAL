@@ -210,7 +210,8 @@ runVanillaCarnival <- function( perturbations,
                                 priorKnowledgeNetwork,
                                 weights = NULL,
                                 carnivalOptions =
-                                  defaultLpSolveCarnivalOptions()) {
+                                  defaultLpSolveCarnivalOptions(),
+                                manualConstraints = NULL) {
 
   message("--- Start of the CARNIVAL pipeline ---")
   message(getTime(), " Carnival flavour: vanilla")
@@ -220,7 +221,8 @@ runVanillaCarnival <- function( perturbations,
 
   checkCarnivalOptions(carnivalOptions)
   carnivalOptions <- collectMetaInfo(carnivalOptions)
-
+  print(dataPreprocessed)
+  
   result <- solveCarnival(dataPreprocessed, carnivalOptions)
   cleanupCarnival(carnivalOptions)
 
